@@ -13,8 +13,8 @@ Cada percurso inicia e termina no ponto de entrada do parque, e poderá passar p
 de interesse selecionados pelo utilizador. O utilizador deverá poder calcular o seu percurso de forma
 a minimizar a distancia, ou o custo do mesmo.
 
-![](imag01.png)
-![](imag02.png)
-![](imag03.png)
+![](img01.png)
+![](img02.png)
+![](img03.png)
 
 
