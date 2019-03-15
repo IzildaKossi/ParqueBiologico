@@ -1,0 +1,49 @@
+
+/* Para guardar a distancia de cada um dos vértices ao vértice de origem.
+   Usar um dicionário Map<Vertex<V>,Integer> distancias;
+   Para guardar o vértice antecessor no caminho mais curto
+   Usar um dicionário Map<Vertex<V>,Vertex<V>> path;
+   Para guardar os vértice visitados
+   Usar um conjunto Set<Vertex<V> visited;*/
+ /*
+
+Dijkstra(grafo,origem)
+  para cada vértice v no grafo
+   distancia[v] = Infinito;
+   predecessor[v] = -1;
+  fim
+
+ distancia[origem] = 0;
+ Q = todos os vértices de grafo;
+
+ enquanto (Q não é vazio) faça,
+  u = vértice é grafo com menor distância;
+  se (distancia[u] == Infinito)
+   retorna;
+  fim
+
+ remova u de Q;
+ para cada vizinho v de u
+  d = distancia[u] + distancia entre u e v;
+  se (d < distancia[v]),
+   distancia[v] = d;
+   predecessor[v] = u;
+ fim
+fim
+fim
+ List<Object> utilizadores = parqueBiologico.getParqueBiologicoDAO().selectAll("utilizador");
+            //se houver utilizador na Db
+            if (utilizadores.size() > 0) {
+                for (Object object : utilizadores) {
+                    if (object instanceof Utilizador) {
+                        Utilizador utilizadorObject = (Utilizador) object;
+                        //if (utilizadorObject == null) {
+                        if (utilizadorObject.getNif() == Integer.valueOf(nifTextField.getText())) {
+                            mostrarInf(Alert.AlertType.ERROR, "Erro", "1Ja existe utilizador com este nif \n"
+                                    + " Preenche o novo nif");
+                            nifTextField.clear();
+                        }
+                    }
+                }
+            }
+        });
